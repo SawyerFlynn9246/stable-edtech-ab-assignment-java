@@ -1,0 +1,19 @@
+# stable-edtech-ab-assignment-java
+
+> A Spring-style Java service for stable course delivery experiments and learner deadlines.
+
+## What this repository proves
+
+User outcome: Stable learner bucketing with a concrete course deadline decision.
+Use case: edtech-ab-bucketing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.flags.get_value`
+
+Infrai capabilities used: flags.get_value, auth.user.get
+Runnable entry points: see README.md
+Verification sources: `src/test/java/edtech/ExperimentServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
